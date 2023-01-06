@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TrendingFacts</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+    font-family: Georgia, serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 10px;
+  text-align: center;
+  background-color: #333;
+  color: rgb(239, 236, 248);
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 25px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.main {
+        flex: 70%;
+        background-color: white;
+        padding: 220px;
+        margin-left: 25%;
+        margin-top: 1%;
+}
+
+		.content {
+			margin: auto;
+			width: 250px;
+			perspective: 1000px;
+			position: relative;
+		}
+
+		.content-carrousel {
+			width: 100%;
+			position: absolute;
+			float: right;
+			animation: rotar 15s infinite linear;
+			transform-style: preserve-3d;
+		}
+
+		.content-carrousel:hover {
+			animation-play-state: paused;
+			cursor: pointer;
+		}
+
+		.content-carrousel figure {
+			width: 100%;
+			height: 150px;
+			border: 1px solid #709538;
+			overflow: hidden;
+			position: absolute;
+		}
+
+		.content-carrousel figure:nth-child(1) {
+			transform: rotateY(0deg) translateZ(300px);
+		}
+
+		.content-carrousel figure:nth-child(2) {
+			transform: rotateY(60deg) translateZ(300px);
+		}
+
+		.content-carrousel figure:nth-child(3) {
+			transform: rotateY(120deg) translateZ(300px);
+		}
+
+		.content-carrousel figure:nth-child(4) {
+			transform: rotateY(180deg) translateZ(300px);
+		}
+
+		.content-carrousel figure:nth-child(5) {
+			transform: rotateY(240deg) translateZ(300px);
+		}
+
+		.content-carrousel figure:nth-child(6) {
+			transform: rotateY(300deg) translateZ(300px);
+		}
+
+		.content-carrousel figure:nth-child(7) {
+			transform: rotateY(360deg) translateZ(300px);
+		}
+
+		.slideshow {
+			position: absolute;
+            top: 300px; 
+		}
+
+		.content-carrousel img {
+			image-rendering: auto;
+			transition: all 300ms;
+			width: 100%;
+			height: 100%;
+		}
+
+		.content-carrousel img:hover {
+			transform: scale(1.2);
+			transition: all 300ms;
+		}
+
+		@keyframes rotar {
+			from {
+				transform: rotateY(0deg);
+			}
+
+			to {
+				transform: rotateY(360deg);
+			}
+		}
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+        <div class="header">
+            <h1>TrendingFacts</h1>
+              <div class="topnav">
+                <a class="active" href="TrendingFacts.html">HOME</a>
+                <a href="ABOUTUS.html">ABOUT US</a>
+                <a href='mailto:trendingfacts41@gmail.com'>CONTACT</a>
+              </div>
+          </div>
+          <marquee direction="right">
+            <h1>Welcome to <a href="TrendingFacts.html">TrendingFacts</a>❤</h1>
+          </marquee>
+<div class="main">
+    <section class="slideshow">
+        <div class="content">
+            <div class="content-carrousel">
+                <figure class="shadow">
+                    <img src="https://st.depositphotos.com/1052079/2494/v/450/depositphotos_24942951-stock-illustration-silhouette-policy-before-the-microphone.jpg">
+                </figure>
+                <figure class="shadow">
+                    <img src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?cs=srgb&dl=pexels-sebastian-ervi-1763075.jpg&fm=jpg">
+                </figure>
+                <figure class="shadow">
+                    <img src="https://media.istockphoto.com/id/1141191007/vector/sports-set-of-athletes-of-various-sports-disciplines-isolated-vector-silhouettes-run-soccer.jpg?s=612x612&w=0&k=20&c=SEabW4SHZ7blMHJPxZNSTl_anOMHO3whQI7HIMxFpSg=">
+                </figure>
+                <figure class="shadow">
+                    <img src="https://img.freepik.com/free-photo/book-with-green-board-background_1150-3836.jpg?w=2000">
+                </figure>
+                <figure class="shadow">
+                    <img src="https://cdn.pixabay.com/photo/2021/05/19/06/13/smartphone-6265047__340.jpg">
+                </figure>
+                <figure class="shadow">
+                    <img src="https://www.psychologies.co.uk/wp-content/uploads/sites/3/2016/05/iStock_000088391701_small.jpg">
+                </figure>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="footer">
+  <h2>&copy;2023 @TrendingFacts All rights reserved</h2>
+</div>
+
+</body>
+</html>
